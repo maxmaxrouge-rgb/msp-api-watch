@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maxmaxrouge-rgb.github.io/msp-api-watch/sitemap.xml
