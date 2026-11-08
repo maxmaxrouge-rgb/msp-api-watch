@@ -1,0 +1,36 @@
+name: Request the offer
+description: Request MSP API watch for your team.
+title: "Offer request"
+body:
+  - type: markdown
+    attributes:
+      value: "Requests are public. Do not include personal contact details, credentials, or confidential information. GitHub sign-in is required."
+  - type: dropdown
+    id: organisation
+    attributes:
+      label: Organisation type
+      options:
+        - MSP
+        - Internal IT team
+        - Software vendor
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: What does your team need?
+      description: Describe the API review need. Keep client names and private details out.
+    validations:
+      required: true
+  - type: dropdown
+    id: contact
+    attributes:
+      label: Preferred contact channel
+      description: Select a channel only. Do not enter an address, phone number, or other contact details.
+      options:
+        - GitHub issue replies
+        - Email (arrange privately later)
+        - Call (arrange privately later)
+    validations:
+      required: true
